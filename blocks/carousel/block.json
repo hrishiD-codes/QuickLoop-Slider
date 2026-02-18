@@ -1,0 +1,64 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "quickloop/carousel",
+  "version": "1.1.0",
+  "title": "QuickLoop Carousel",
+  "category": "media",
+  "icon": "images-alt2",
+  "description": "Display a responsive carousel of images with customizable effects and settings",
+  "keywords": ["carousel", "slider", "gallery", "images"],
+  "textdomain": "quickloop-carousel",
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"],
+    "anchor": true,
+    "customClassName": true,
+    "className": true,
+    "inserter": true,
+    "multiple": true,
+    "reusable": true
+  },
+  "attributes": {
+    "images": {
+      "type": "array",
+      "default": []
+    },
+    "autoplay": {
+      "type": "boolean",
+      "default": null
+    },
+    "delay": {
+      "type": "number",
+      "default": null
+    },
+    "navigation": {
+      "type": "boolean",
+      "default": null
+    },
+    "pagination": {
+      "type": "boolean",
+      "default": null
+    },
+    "loop": {
+      "type": "boolean",
+      "default": null
+    },
+    "effect": {
+      "type": "string",
+      "enum": ["slide", "fade", "zoom"],
+      "default": null
+    },
+    "speed": {
+      "type": "number",
+      "default": null
+    }
+  },
+  "example": {
+    "attributes": {
+      "images": []
+    }
+  },
+  "editorScript": "file:./block.js",
+  "editorStyle": "file:./editor.css"
+}
