@@ -1,0 +1,116 @@
+/**
+ * QuickLoop Carousel Admin Styles
+ * 
+ * @package QuickLoop_Carousel
+ */
+
+.qlc-settings-wrap {
+	max-width: 900px;
+}
+
+.qlc-settings-wrap h1 {
+	margin-bottom: 20px;
+}
+
+.qlc-settings-wrap .form-table {
+	margin-top: 20px;
+}
+
+.qlc-settings-wrap .form-table th {
+	padding: 15px 10px 15px 0;
+	font-weight: 600;
+}
+
+.qlc-settings-wrap .form-table td {
+	padding: 15px 10px;
+}
+
+.qlc-settings-actions {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.qlc-reset-defaults {
+	margin-left: 10px;
+}
+
+.qlc-settings-info {
+	margin-top: 40px;
+	padding: 20px;
+	background: #f0f0f1;
+	border-left: 4px solid #2271b1;
+}
+
+.qlc-settings-info h2 {
+	margin-top: 0;
+	font-size: 18px;
+}
+
+.qlc-settings-info code {
+	background: #fff;
+	padding: 3px 8px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	font-size: 13px;
+}
+
+.qlc-settings-info ul {
+	list-style: disc;
+	margin-left: 20px;
+}
+
+.qlc-settings-info ul li {
+	margin-bottom: 8px;
+}
+
+/* Settings sections */
+.qlc-settings-wrap h2.title {
+	font-size: 16px;
+	font-weight: 600;
+	margin: 30px 0 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+.qlc-settings-wrap h2.title:first-of-type {
+	margin-top: 20px;
+}
+
+/* Input fields */
+.qlc-settings-wrap input[type="number"] {
+	width: 120px;
+}
+
+.qlc-settings-wrap select {
+	min-width: 200px;
+}
+
+.qlc-settings-wrap .description {
+	color: #646970;
+	font-style: normal;
+}
+
+/* Success/error messages */
+.qlc-settings-wrap .notice {
+	margin: 20px 0;
+}
+
+/* Checkbox styling */
+.qlc-settings-wrap input[type="checkbox"] {
+	margin-right: 8px;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+	.qlc-settings-actions {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	
+	.qlc-reset-defaults {
+		margin-left: 0;
+		margin-top: 10px;
+	}
+}
